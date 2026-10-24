@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy 7th Birthday Adriel Mwangi 🎂</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            overflow-x: hidden;
+            color: white;
+            min-height: 100vh;
+            animation: bgChange 12s infinite;
+        }
+
+        @keyframes bgChange {
+            0% {
+                background: #ff6b6b;
+            }
+
+            20% {
+                background: #ff9f43;
+            }
+
+            40% {
+                background: #54a0ff;
+            }
+
+            60% {
+                background: #10ac84;
+            }
+
+            80% {
+                background: #5f27cd;
+            }
+
+            100% {
+                background: #ff6b6b;
+            }
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-top: 20px;
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, .5);
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            margin: 15px;
+        }
+
+        img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 25px;
+            box-shadow: 0 0 30px gold;
+            margin-top: 20px;
+        }
+
+        .message {
+            background: rgba(0, 0, 0, 0.35);
+            padding: 25px;
+            border-radius: 20px;
+            margin-top: 25px;
+            font-size: 1.3rem;
+            line-height: 1.8;
+        }
+
+        .big-seven {
+            font-size: 6rem;
+            margin: 20px;
+            animation: spin 6s linear infinite;
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .buttons {
+            margin-top: 25px;
+        }
+
+        button {
+            padding: 15px 30px;
+            margin: 10px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            background: gold;
+            color: black;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+        }
+
+        .candles {
+            font-size: 3rem;
+            margin: 25px;
+            animation: flicker 1s infinite;
+        }
+
+        @keyframes flicker {
+            50% {
+                opacity: .5;
+            }
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 1.3rem;
+        }
+
+        .balloon {
+            position: fixed;
+            bottom: -100px;
+            font-size: 40px;
+            animation: floatUp 10s linear infinite;
+        }
+
+        .balloon:nth-child(1) {
+            left: 5%;
+            animation-duration: 8s;
+        }
+
+        .balloon:nth-child(2) {
+            left: 20%;
+            animation-duration: 12s;
+        }
+
+        .balloon:nth-child(3) {
+            left: 40%;
+            animation-duration: 10s;
+        }
+
+        .balloon:nth-child(4) {
+            left: 60%;
+            animation-duration: 9s;
+        }
+
+        .balloon:nth-child(5) {
+            left: 80%;
+            animation-duration: 11s;
+        }
+
+        @keyframes floatUp {
+            from {
+                transform: translateY(0);
+            }
+
+            to {
+                transform: translateY(-120vh);
+            }
+        }
+
+        #surpriseText {
+            font-size: 2rem;
+            margin-top: 20px;
+            font-weight: bold;
+            color: yellow;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="balloon">🎈</div>
+    <div class="balloon">🎉</div>
+    <div class="balloon">🎁</div>
+    <div class="balloon">🎂</div>
+    <div class="balloon">⭐</div>
+
+    <div class="container">
+
+        <h1>
+            🎉 HAPPY 7TH BIRTHDAY 🎉
+        </h1>
+
+        <h1>
+            ADRIEL MWANGI
+        </h1>
+
+        <div class="subtitle">
+            Today we celebrate an awesome superstar turning 7! ⭐
+        </div>
+
+        <img src="birthday.jpg" alt="Adriel Birthday">
+
+        <div class="big-seven">
+            7️⃣
+        </div>
+
+        <div class="message">
+
+            🎂 Dear Adriel,
+
+            May God bless you with abundant joy, good health, wisdom and many wonderful adventures as you celebrate your
+            7th birthday.
+
+            May your days be filled with laughter, exciting discoveries, amazing friendships and endless reasons to
+            smile.
+
+            Have lots of cake 🍰, lots of fun 🎉 and lots of blessings 🎁.
+
+            You are special, you are loved, and today is YOUR DAY!
+
+            🥳 HAPPY BIRTHDAY ADRIEL! 🥳
+
+        </div>
+
+        <div class="candles">
+            🕯️ 🕯️ 🕯️ 🕯️ 🕯️ 🕯️ 🕯️
+        </div>
+
+        <div class="buttons">
+
+            <button onclick="playSong()">
+                🎵 Play Birthday Song
+            </button>
+
+            <button onclick="surpriseMe()">
+                🎁 Surprise Me
+            </button>
+
+        </div>
+
+        <div id="surpriseText"></div>
+
+        <div class="footer">
+            ❤️ With Lots of Love ❤️
+        </div>
+
+        <audio id="birthdaySong">
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3">
+        </audio>
+
+    </div>
+
+    <script>
+
+        function playSong() {
+
+            let song = document.getElementById("birthdaySong");
+
+            song.play();
+
+            alert(
+                "🎂 Happy Birthday Adriel Mwangi! 🎉\n\nToday you are officially 7 years old! 🥳"
+            );
+
+        }
+
+        function surpriseMe() {
+
+            const colors = [
+                "#ff4757",
+                "#ff6b81",
+                "#ffa502",
+                "#2ed573",
+                "#1e90ff",
+                "#3742fa",
+                "#e84393",
+                "#00cec9"
+            ];
+
+            const messages = [
+                "🎉 Birthday Superstar!",
+                "🎂 More Cake Please!",
+                "🎈 Have Fun Adriel!",
+                "⭐ You Are Amazing!",
+                "🎁 Surprise Birthday Power!",
+                "🚀 Future Champion!",
+                "🥳 Hip Hip Hooray!",
+                "🎊 Seven Looks Great On You!"
+            ];
+
+            document.body.style.background =
+                colors[Math.floor(Math.random() * colors.length)];
+
+            document.getElementById("surpriseText").innerHTML =
+                messages[Math.floor(Math.random() * messages.length)];
+
+            createConfetti();
+
+        }
+
+        function createConfetti() {
+
+            for (let i = 0; i < 40; i++) {
+
+                let confetti = document.createElement("div");
+
+                confetti.innerHTML = "🎉";
+
+                confetti.style.position = "fixed";
+                confetti.style.left = Math.random() * 100 + "vw";
+                confetti.style.top = "-20px";
+                confetti.style.fontSize = "30px";
+                confetti.style.zIndex = "999";
+
+                document.body.appendChild(confetti);
+
+                let fall = setInterval(() => {
+
+                    let top = parseInt(confetti.style.top);
+
+                    confetti.style.top = (top + 5) + "px";
+
+                    if (top > window.innerHeight) {
+
+                        clearInterval(fall);
+                        confetti.remove();
+
+                    }
+
+                }, 20);
+
+            }
+        }
+
+        window.onload = function () {
+
+            setTimeout(function () {
+
+                alert(
+                    "🎂 Welcome Adriel Mwangi! 🎉\n\nHappy 7th Birthday Superstar! ⭐🥳"
+                );
+
+            }, 1000);
+
+        };
+
+    </script>
+
+</body>
+
+</html>
